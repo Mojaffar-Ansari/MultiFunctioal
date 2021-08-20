@@ -28,7 +28,10 @@ body{
 .userInput{
     box-sizing: border-box;
     width: 98%;
-    padding: 30px 12px;
+    /* padding: 30px 12px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
     text-align: right;
     background: whitesmoke;
     backdrop-filter: blur(20px);
@@ -58,9 +61,9 @@ body{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
-.btnPlus, .btnMinus, .btnStar, .btnDiv, .btnEqual{
+/* .btnPlus, .btnMinus, .btnStar, .btnDiv, .btnEqual{
 font-size: 20px;
-}
+} */
 .btnEqual{
     width:98%;
     margin-top: 4px;
@@ -112,13 +115,3 @@ font-size: 20px;
     }
     
 }
-/* @media(max-width:414px){
-   .userInput{
-       margin-top: 5rem;
-   }
-} */
-/* @media(max-width:320px){
-    .userInput{
-        margin-top: 6rem;
-    }
-} */
