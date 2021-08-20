@@ -104,6 +104,9 @@ font-size: 20px;
         background: none;
         box-shadow: none;
     }
+    .btnEqual{
+        margin-bottom: 2rem;
+    }
     
 }
 /* @media(max-width:414px){
