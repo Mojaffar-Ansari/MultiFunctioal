@@ -1,0 +1,120 @@
+body{
+    overflow: hidden;
+    background-image: linear-gradient(to right, #b2bfd5, #9dcadc, #90d3d2, #9fd9b8, #c5d89c);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    /* border: 2px solid black; */
+    width: 40vw;
+    height: 55vh;
+    border-radius: 20px;
+    background: whitesmoke;
+    margin: auto;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 7px 9px 32px -8px rgba(97,83,83,0.45) inset;
+    -webkit-box-shadow: 7px 9px 32px -8px rgba(97,83,83,0.45) inset;
+    -moz-box-shadow: 7px 9px 32px -8px rgba(97,83,83,0.45) inset;
+}
+
+.userInput{
+    box-sizing: border-box;
+    width: 98%;
+    padding: 30px 8px;
+    text-align: right;
+    background: whitesmoke;
+    backdrop-filter: blur(20px);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    direction: ltr;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.btn{
+    width: 24%;
+    height: 45px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+    transition: all 0.2s;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+}
+.btn:active{
+    transform: translate(0,3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btnPlus, .btnMinus, .btnStar, .btnDiv, .btnEqual{
+font-size: 20px;
+}
+.btnEqual{
+    width:98%;
+    margin-top: 4px;
+    font-weight: 600;
+    background: rgb(231 231 231);
+    backdrop-filter: blur(30px);
+}
+
+@media(max-width:1024px){
+  .calculator{
+    height: 55vh;
+    width: 45vw;
+  }
+  .userInput{
+      height: 8rem;
+      font-size: 2rem;
+  }
+  .btn{
+      height: 55px;
+  }
+}
+
+@media(max-width:669px){
+    .btn{
+        width: 23.5%;
+    }
+    .btnEqual{
+        width: 98%;
+    }
+}
+
+@media(max-width:540px){
+    .btn{
+        height: 50px;
+    }
+}
+@media(max-width:480px){
+    .calculator{
+        width: 100%;
+        height: 100%;
+        background: none;
+        box-shadow: none;
+    }
+    .userInput{
+        margin-top: 10rem;
+    }
+}
+@media(max-width:414px){
+   .userInput{
+       margin-top: 12rem;
+   }
+}
+@media(max-width:320px){
+    .userInput{
+        margin-top: 6rem;
+    }
+}
