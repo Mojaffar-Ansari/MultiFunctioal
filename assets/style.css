@@ -28,7 +28,7 @@ body{
 .userInput{
     box-sizing: border-box;
     width: 98%;
-    padding: 30px 8px;
+    padding: 30px 12px;
     text-align: right;
     background: whitesmoke;
     backdrop-filter: blur(20px);
